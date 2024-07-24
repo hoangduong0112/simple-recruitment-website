@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+:root { 
+    --background-color : #76417e;
+    --background-gray : #808080;
+    --var-font-family: 'Montserrat', sans-serif;
+    --linear-gradient:linear-gradient(var(--background-color), 30%, #212f3f);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
+    font-family: var(--var-font-family);
+    height: 100%;
+}
+#root{
+    height: 100%;
+}
+.App{
+    height: 100%;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    z-index: 10000;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #dfdede;
+}
+// CUS TOM TOAST IFY
+.Toastify__toast-theme--light {
+    background-color:  white;
+    color: var(--font-color-primary);
+    font-family: var(--var-font-family);
+    font-size: 1.4rem;
+}
+.Toastify__progress-bar {
+    background-color:  var(--background-color);
+}
+.Toastify__progress-bar--rtl {
+    background-color:  var(--background-color);
+}
+/** colored notifications share the same progress bar color **/
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info,
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--success,
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning,
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {
+    background-color:  var(--background-color);
+}
+.Toastify__toast-body{
+    color: var(--background-color);
+    font-weight: 600;
+}
+// 
+.slick-slide div{
+    //margin: 0 10px;
+}
+.variable-width .slick-slide p{
+    margin: 5px;
+    line-height: 2;
+    text-align: center;
+}
+.button, .variable-width .slick-slide p{
+    background: #e9eaec;
+    border: 2px solid #e9eaec;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: var(--var-font-family);
+    font-size: 1.4rem;
+    &:hover{
+        border: 2px solid var(--background-color);
+        cursor: pointer;
+    }
+}
+.slick-prev, .slick-next{
+    width: 30px;
+    height: 30px;
+    &:before{
+        font-size: 30px;
+        color: var(--background-color);
+    }
+}
+.slick-prev{
+    left: -30px;
+}
+.slick-next{
+    right: -30px;
+}
+.slick-dots{
+    display: none !important;
+}
+// TABLE
+.css-177gid-MuiTableCell-root,
+.css-1ffr6e3-MuiTableCell-root.MuiTableCell-head,
+.css-1fxr68j-MuiTableCell-root,
+.css-1ex1afd-MuiTableCell-root{
+    border: 1px solid #ccc;
+    font-size: 1.25rem !important;
+    font-family: var(--var-font-family) !important;
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+    border-radius: 10px !important;
+    overflow-y: auto;
+    max-height: 450px;
+}
+.css-1it3gd4-MuiTableRow-root{
+    height: 143px;
+}
+.css-1it3gd4-MuiTableRow-root:hover {
+    background-color: #fdecff;
+}
+.css-1it3gd4-MuiTableRow-root:hover .css-1it3gd4-MuiTableRow-root-hover-selected{
+    display: block;
+}
+.css-1it3gd4-MuiTableRow-root-hover-selected{
+    display: none;
+}
+.css-1it3gd4-MuiTableRow-nameJobs{
+    width: 215px;
+}
+// 
+.css-13aj3tc-MuiChartsSurface-root{
+    width: 100%;
+    height: 250px;
+}
+.css-1k2u9zb-MuiChartsAxis-root .MuiChartsAxis-label{
+    font-weight: 600 !important;
+    font-family: var(--var-font-family) !important;
+}

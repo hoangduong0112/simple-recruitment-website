@@ -1,0 +1,77 @@
+.wrapper{
+    background: white;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: .3s;
+    &:hover{
+        cursor: pointer;
+        border-color: var(--background-color) !important;
+        box-shadow: 0 10px 30px rgba(14,166,59,.2);
+        background-color: #fdf6fd;
+        
+    }
+    &:hover &__see{
+        &-seeBox{
+            display: flex;
+            transform: translateY(0)!important;
+        }   
+        
+    }
+    &__header{
+        &-img{
+            width: 20%;
+            border: 1px solid #ccc;
+        }
+        &-content{
+            width: 80%;
+            & span {
+                display: block;
+                width: 100%;
+                overflow: hidden; 
+                white-space: nowrap; 
+                text-overflow: ellipsis;
+                font-size: 1.4rem;
+                margin-left: 20px;
+            }
+        }
+    }
+    &__info{
+        &-wage,
+        &-address{
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 5px 7px;
+            border: 1px solid #e9eaec;
+            background: #e9eaec;
+            border-radius: 5px;
+        }
+        &-wage{
+            background: var(--background-color);
+            color: white;
+        }
+    }
+    &__see{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 40px;
+        margin: auto;
+        
+        &-seeBox{
+            align-items: center;
+            padding: 5px 10px;
+            border: 1px solid var(--background-color);
+            border-radius: 5px;
+            background: #fef7fe;
+            color: var(--background-color);
+            font-weight: 600;
+            margin-right: 20px;
+            transition: translateY(101%);
+            transition: transform 0.4s;
+            display: none;
+            font-size: 1.25rem;
+        }
+    }
+}
